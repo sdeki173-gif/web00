@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color:  #e7e7e7;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .model-container {
+            height: 700px;
+            width: 700px;
+        }
+
+        model-viewer {
+            height: 100%;
+            width: 100%;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="model-container">
+       <model-viewer alt="3d model" src="lion.glb" camera-controls auto-rotate>
+
+       </model-viewer>
+    </div>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>
